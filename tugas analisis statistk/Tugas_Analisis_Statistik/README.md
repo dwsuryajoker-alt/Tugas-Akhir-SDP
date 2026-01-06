@@ -78,9 +78,11 @@ Berdasarkan kuartil, sebanyak 25% data berada di bawah 15,23 juta IDR, yang menu
 
 **Visualisasi Data (Histogram)**
 ![alt text](results/histogram_.png)
+![alt text](results/boxplot_Biaya_Akuisisi_Pelanggan_Juta_IDR)
+
 Interpretasi Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR
 
-Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR menunjukkan bahwa data biaya akuisisi pelanggan tersebar dalam rentang yang cukup luas, yaitu dari sekitar 2,56 juta IDR hingga 68,77 juta IDR. Sebaran batang histogram terlihat relatif merata di sepanjang rentang nilai, namun tetap menunjukkan variasi frekuensi pada beberapa interval tertentu.
+Histogram dab Boxplot Biaya_Akuisisi_Pelanggan_Juta_IDR menunjukkan bahwa data biaya akuisisi pelanggan tersebar dalam rentang yang cukup luas, yaitu dari sekitar 2,56 juta IDR hingga 68,77 juta IDR. Sebaran batang histogram terlihat relatif merata di sepanjang rentang nilai, namun tetap menunjukkan variasi frekuensi pada beberapa interval tertentu.
 
 Garis merah putus-putus pada histogram menandai nilai mean sebesar 33,5 juta IDR, yang berada di sekitar bagian tengah distribusi. Posisi mean yang berada di pusat sebaran menunjukkan bahwa secara umum biaya akuisisi pelanggan rata-rata berada pada kisaran menengah, tidak terlalu rendah maupun terlalu tinggi.
 
@@ -97,12 +99,22 @@ Secara keseluruhan, data biaya akuisisi pelanggan tidak terpusat pada satu nilai
 
 ### 5.2. Uji Normalitas
 - **Hasil Uji Shapiro-Wilk:**
-  - *Nilai p-value...*
-  - *Interpretasi:* Apakah data Anda terdistribusi normal berdasarkan hasil uji? Apa implikasinya?
+**Hasil Uji Shapiro–Wilk**
+
+Berdasarkan uji normalitas Shapiro–Wilk terhadap variabel Biaya_Akuisisi_Pelanggan_Juta_IDR, diperoleh nilai statistik uji W = 0,94291 dengan p-value = 4,138 × 10⁻¹⁵. Nilai p-value tersebut jauh lebih kecil dari tingkat signifikansi 0,05.
+
+**Interpretasi:**
+
+Karena nilai p-value < 0,05, maka hipotesis nol (H₀) yang menyatakan bahwa data berdistribusi normal ditolak. Hal ini menunjukkan bahwa secara statistik, sebaran data Biaya_Akuisisi_Pelanggan_Juta_IDR tidak mengikuti distribusi normal. Ketidaknormalan distribusi ini mengindikasikan bahwa data memiliki pola sebaran yang tidak simetris dan kemungkinan dipengaruhi oleh nilai-nilai ekstrem pada beberapa observasi.
+
+Dalam konteks biaya akuisisi pelanggan, kondisi ini dapat terjadi karena perbedaan strategi pemasaran dan tingkat efisiensi antar perusahaan. Sebagian perusahaan mungkin mampu memperoleh pelanggan dengan biaya relatif rendah, sementara perusahaan lain harus mengeluarkan biaya yang jauh lebih besar akibat persaingan pasar, intensitas promosi, atau karakteristik segmen pelanggan yang berbeda. Variasi inilah yang menyebabkan distribusi data menyimpang dari pola normal.
 - **Plot Q-Q:**
-  - *Sematkan gambar plot dari folder /results...*
+  ![alt text](results/qq_plot_.png)
   - *Interpretasi:* Apakah titik-titik data mengikuti garis lurus? Apa artinya?
 
+Berdasarkan Q-Q Plot variabel Biaya_Akuisisi_Pelanggan_Juta_IDR, terlihat bahwa titik-titik data tidak mengikuti garis diagonal secara konsisten. Pada bagian tengah, beberapa titik masih mendekati garis normal teoritis, namun pada kuantil rendah dan kuantil tinggi terjadi penyimpangan yang jelas. Pola lengkungan ini menunjukkan bahwa distribusi data tidak simetris dan dipengaruhi oleh nilai-nilai ekstrem, khususnya pada biaya akuisisi pelanggan yang tinggi. Temuan ini memperkuat hasil uji Shapiro–Wilk yang menyatakan bahwa data Biaya_Akuisisi_Pelanggan_Juta_IDR tidak berdistribusi normal.
+
+Penyimpangan pada bagian ekor distribusi menunjukkan adanya variasi biaya akuisisi pelanggan yang cukup besarzikareta antar perusahaan. Sebagian perusahaan mampu memperoleh pelanggan dengan biaya relatif rendah, sementara perusahaan lain harus mengeluarkan biaya yang jauh lebih tinggi akibat perbedaan strategi pemasaran dan tingkat persaingan. Kondisi ini menyebabkan distribusi data menjadi tidak normal dan menegaskan bahwa penggunaan ukuran sebaran serta metode analisis non-parametrik perlu dipertimbangkan pada tahap analisis selanjutnya.
 ### 5.3. Analisis Korelasi
 - **Nilai Koefisien Korelasi:**
   - *Nilai r...*
