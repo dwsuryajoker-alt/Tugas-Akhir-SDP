@@ -78,7 +78,7 @@ Berdasarkan kuartil, sebanyak 25% data berada di bawah 15,23 juta IDR, yang menu
 
 **Visualisasi Data (Histogram)**
 ![alt text](results/histogram_.png)
-![alt text](results/boxplot_Biaya_Akuisisi_Pelanggan_Juta_IDR)
+![alt text](results/boxplot.png)
 
 Interpretasi Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR
 
