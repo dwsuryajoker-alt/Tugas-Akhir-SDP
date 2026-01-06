@@ -125,7 +125,7 @@ Penyimpangan pada bagian ekor distribusi menunjukkan adanya variasi biaya akuisi
 Nilai koefisien korelasi (r) sebesar 0,9997703 menunjukkan adanya korelasi positif yang sangat kuat antara Biaya_Akuisisi_Pelanggan_Juta_IDR dan Nilai_Pelanggan_Juta_IDR. Arah hubungan yang positif berarti bahwa semakin tinggi biaya akuisisi pelanggan, maka semakin tinggi pula nilai pelanggan yang dihasilkan. Besarnya nilai r yang mendekati 1 menunjukkan bahwa hubungan antara kedua variabel bersifat hampir linear sempurna dan sangat konsisten di seluruh data.
 
 - **Visualisasi (Scatter Plot):**
-  -![alt text](result/sscatterplot.png)
+  -![alt text](result/scatterplot.png)
   - *Interpretasi:* Apakah pola pada scatter plot mendukung hasil koefisien korelasi?
 
 Ya, pola pada scatter plot sangat mendukung hasil koefisien korelasi. Scatter plot menunjukkan titik-titik data yang tersebar rapat dan membentuk pola linear positif yang jelas, sejalan dengan nilai koefisien korelasi r = 0,9997703 yang menandakan korelasi positif sangat kuat. Konsistensi sebaran titik di sepanjang garis tren menunjukkan bahwa hubungan antara kedua variabel tidak hanya kuat secara statistik, tetapi juga tampak jelas secara visual.
