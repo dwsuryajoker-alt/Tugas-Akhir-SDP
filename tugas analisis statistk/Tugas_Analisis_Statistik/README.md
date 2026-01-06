@@ -78,7 +78,8 @@ Berdasarkan kuartil, sebanyak 25% data berada di bawah 15,23 juta IDR, yang menu
 
 **Visualisasi Data (Histogram)**
 ![alt text](results/histogram_.png)
-![alt text](results/boxplot.png)
+![alt text](results/boxplot_Biaya_Akuisisi_Pelanggan_Juta_IDR.png)
+
 
 Interpretasi Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR
 
@@ -118,24 +119,63 @@ Penyimpangan pada bagian ekor distribusi menunjukkan adanya variasi biaya akuisi
 ### 5.3. Analisis Korelasi
 - **Nilai Koefisien Korelasi:**
   - *Nilai r...*
-  - *Interpretasi:* Seberapa kuat dan apa arah hubungan antara dua variabel yang Anda uji? (misalnya, korelasi positif kuat, negatif lemah, atau tidak ada korelasi).
+  - Nilai r = 0,9997703
+
+**Interpretasi:**
+Nilai koefisien korelasi (r) sebesar 0,9997703 menunjukkan adanya korelasi positif yang sangat kuat antara Biaya_Akuisisi_Pelanggan_Juta_IDR dan Nilai_Pelanggan_Juta_IDR. Arah hubungan yang positif berarti bahwa semakin tinggi biaya akuisisi pelanggan, maka semakin tinggi pula nilai pelanggan yang dihasilkan. Besarnya nilai r yang mendekati 1 menunjukkan bahwa hubungan antara kedua variabel bersifat hampir linear sempurna dan sangat konsisten di seluruh data.
+
 - **Visualisasi (Scatter Plot):**
-  - *Sematkan gambar plot dari folder /results...*
+  -![alt text](result/sscatterplot.png)
   - *Interpretasi:* Apakah pola pada scatter plot mendukung hasil koefisien korelasi?
 
+Ya, pola pada scatter plot sangat mendukung hasil koefisien korelasi. Scatter plot menunjukkan titik-titik data yang tersebar rapat dan membentuk pola linear positif yang jelas, sejalan dengan nilai koefisien korelasi r = 0,9997703 yang menandakan korelasi positif sangat kuat. Konsistensi sebaran titik di sepanjang garis tren menunjukkan bahwa hubungan antara kedua variabel tidak hanya kuat secara statistik, tetapi juga tampak jelas secara visual.
+
+scatter plot antara Biaya_Akuisisi_Pelanggan_Juta_IDR dan Nilai_Pelanggan_Juta_IDR menunjukkan adanya pola hubungan linear positif yang sangat jelas. Titik-titik data tersebar rapat dan membentuk garis lurus yang menanjak, yang mengindikasikan bahwa semakin besar biaya yang dikeluarkan untuk akuisisi pelanggan, semakin besar pula nilai pelanggan yang dihasilkan. Kerapatan titik di sekitar garis tren menunjukkan bahwa hubungan antara kedua variabel bersifat sangat kuat dan konsisten.
+
+Selain itu, hampir tidak terlihat penyimpangan ekstrem atau pola non-linear pada sebaran data. Hal ini menunjukkan bahwa hubungan antara biaya akuisisi pelanggan dan nilai pelanggan bersifat stabil di seluruh rentang data yang dianalisis. Pola scatter plot ini secara visual memperkuat hasil uji korelasi Pearson yang menunjukkan adanya korelasi positif yang sangat kuat dan signifikan secara statistik antara kedua variabel.
 ### 5.4. Analisis Regresi
-- **Model Regresi:**
-  - *Persamaan regresi: Y = b0 + b1*X*
-  - *Interpretasi:* Jelaskan arti dari koefisien intercept (b0) dan slope (b1) dalam konteks data Anda.
-- **Evaluasi Model (R-squared):**
-  - *Nilai R-squared...*
-  - *Interpretasi:* Berapa persen variasi dari variabel dependen yang dapat dijelaskan oleh model regresi Anda?
+-5.4. Analisis Regresi
+
+Analisis regresi linear dilakukan untuk mengetahui pengaruh Biaya_Akuisisi_Pelanggan_Juta_IDR terhadap Nilai_Pelanggan_Juta_IDR, serta untuk membangun model prediktif yang menjelaskan hubungan kuantitatif antara kedua variabel tersebut.
+
+Model Regresi
+
+Persamaan Regresi:
+
+𝑌=𝑏0+𝑏1𝑋Y=b0+b1X
+
+Berdasarkan hasil analisis regresi linear, diperoleh persamaan model sebagai berikut:
+
+Nilai_Pelanggan_Juta_IDR=0,38+2,99×
+Biaya_Akuisisi_Pelanggan_Juta_IDR
+Nilai_Pelanggan_Juta_IDR=−0,38+2,99×Biaya_Akuisisi_Pelanggan_Juta_IDR
+
+Interpretasi Koefisien:
+
+Nilai intercept (b₀) sebesar -0,38 menunjukkan nilai prediksi Nilai_Pelanggan_Juta_IDR ketika Biaya_Akuisisi_Pelanggan_Juta_IDR bernilai 0. Secara matematis, intercept berfungsi sebagai titik awal model regresi. Namun, dalam konteks nyata, nilai ini tidak selalu memiliki makna praktis karena biaya akuisisi pelanggan bernilai nol jarang terjadi.
+
+Nilai slope (b₁) sebesar 2,99 menunjukkan bahwa setiap kenaikan 1 juta IDR biaya akuisisi pelanggan akan meningkatkan nilai pelanggan sebesar rata-rata 2,99 juta IDR. Koefisien slope yang bernilai positif menandakan adanya hubungan searah, di mana peningkatan biaya akuisisi pelanggan diikuti oleh peningkatan nilai pelanggan.
+
+Evaluasi Model (R-squared)
+
+Nilai R-squared (Adjusted R-squared) = 0,9995 atau 99,95%
+
+Interpretasi:
+
+Nilai Adjusted R-squared sebesar 0,9995 menunjukkan bahwa sekitar 99,95% variasi pada variabel Nilai_Pelanggan_Juta_IDR dapat dijelaskan oleh variabel Biaya_Akuisisi_Pelanggan_Juta_IDR melalui model regresi ini. Hal ini menandakan bahwa model memiliki daya jelaskan yang sangat tinggi, dan hanya sekitar 0,05% variasi data yang dipengaruhi oleh faktor lain di luar model.
+
+Tingginya nilai R-squared ini menunjukkan bahwa hubungan antara kedua variabel sangat kuat dan hampir seluruh perubahan nilai pelanggan dapat diterangkan oleh perubahan biaya akuisisi pelanggan.
 - **Visualisasi (Garis Regresi pada Scatter Plot):**
-  - *Sematkan gambar plot dari folder /results...*
+  -  -![alt text](result/plot_regresi.png)
   - *Interpretasi:* Jelaskan bagaimana garis regresi merepresentasikan hubungan antara variabel.
 
+Garis regresi yang menanjak pada grafik menunjukkan adanya hubungan linear positif antara Biaya_Akuisisi_Pelanggan_Juta_IDR dan Nilai_Pelanggan_Juta_IDR. Artinya, semakin besar biaya yang dikeluarkan untuk mengakuisisi pelanggan, maka nilai pelanggan yang dihasilkan juga cenderung semakin tinggi. Pola ini terlihat jelas karena titik-titik data mengikuti arah garis regresi dengan penyebaran yang relatif kecil.
+
+Selain itu, kedekatan hampir seluruh titik data terhadap garis regresi menunjukkan bahwa model mampu merepresentasikan hubungan kedua variabel dengan sangat baik. Hal ini sejalan dengan nilai Adjusted R-squared yang mendekati 1, yang menandakan bahwa variasi nilai pelanggan hampir seluruhnya dapat dijelaskan oleh biaya akuisisi pelanggan dalam model regresi ini.
 ---
 
 ## 6. Kesimpulan
 
-Rangkum temuan utama dari analisis Anda dalam beberapa kalimat. Apa wawasan paling penting yang Anda peroleh?
+Berdasarkan seluruh rangkaian analisis yang dilakukan, dapat disimpulkan bahwa Biaya Akuisisi Pelanggan memiliki hubungan yang sangat kuat, positif, dan signifikan secara statistik dengan Nilai Pelanggan. Hal ini dibuktikan melalui nilai koefisien korelasi Pearson yang mendekati 1, p-value yang sangat kecil, serta pola scatter plot yang menunjukkan sebaran titik mengikuti garis lurus dengan sangat rapat. Dengan demikian, secara statistik dapat diyakini bahwa peningkatan biaya akuisisi benar-benar berkaitan erat dengan peningkatan nilai pelanggan, bukan terjadi secara kebetulan.
+
+Wawasan paling penting yang diperoleh dari analisis ini adalah bahwa Biaya Akuisisi Pelanggan merupakan prediktor yang sangat kuat terhadap Nilai Pelanggan. Model regresi linear menunjukkan bahwa hampir seluruh variasi nilai pelanggan dapat dijelaskan oleh biaya akuisisi, sebagaimana tercermin dari nilai Adjusted R-squared yang mendekati 100%. Hal ini mengindikasikan bahwa dalam konteks data ini, strategi pengeluaran untuk akuisisi pelanggan memiliki peran krusial dalam menentukan nilai pelanggan yang dihasilkan, sehingga dapat menjadi dasar penting dalam pengambilan keputusan bisnis dan perencanaan strategi pemasaran.
