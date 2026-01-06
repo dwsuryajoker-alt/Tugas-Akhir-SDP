@@ -45,15 +45,55 @@ Untuk mereproduksi hasil analisis ini, ikuti langkah-langkah berikut:
 Di bagian ini, mahasiswa diharapkan untuk menyajikan dan menginterpretasikan hasil dari setiap tahap analisis.
 
 ### 5.1. Statistik Deskriptif
-- **Ukuran Pemusatan (Mean, Median, Modus):**
-  - *Tabel atau ringkasan...*
-  - *Interpretasi:* Jelaskan apa arti dari nilai-nilai tersebut terkait dengan data Anda.
-- **Ukuran Sebaran (Standar Deviasi, Range, Kuartil):**
-  - *Tabel atau ringkasan...*
-  - *Interpretasi:* Jelaskan seberapa menyebar data Anda berdasarkan nilai-nilai ini.
-- **Visualisasi (Histogram/Boxplot):**
-  - *Sematkan gambar plot dari folder /results...*
-  - *Interpretasi:* Jelaskan wawasan apa yang Anda dapatkan dari bentuk distribusi data.
+5.1. Statistik Deskriptif
+Ukuran Pemusatan (Mean, Median, Modus)
+
+Ringkasan Nilai:
+
+Berdasarkan hasil analisis statistik deskriptif pada variabel Biaya_Akuisisi_Pelanggan_Juta_IDR, diperoleh nilai mean (rata-rata) sebesar 33,50 juta IDR, median sebesar 33,08 juta IDR, dan modus sebesar 3,21 juta IDR. Nilai mean dan median yang sangat berdekatan menunjukkan bahwa pusat distribusi data berada pada kisaran yang relatif sama, sehingga distribusi data tidak mengalami kemencengan (skewness) yang ekstrem. Sementara itu, nilai modus yang jauh lebih kecil dibandingkan mean dan median mengindikasikan bahwa terdapat sejumlah observasi dengan biaya akuisisi pelanggan yang rendah dan sering muncul dalam dataset.
+
+Interpretasi:
+
+Nilai mean sebesar 33,50 juta IDR menunjukkan rata-rata biaya yang dikeluarkan perusahaan untuk memperoleh satu pelanggan. Median sebesar 33,08 juta IDR yang hampir sama dengan nilai mean mengindikasikan bahwa sebagian besar data tersebar secara relatif seimbang di sekitar nilai pusat tersebut. Kedekatan antara mean dan median menandakan bahwa distribusi biaya akuisisi pelanggan tidak condong secara ekstrem ke kiri maupun ke kanan.
+
+Namun demikian, nilai modus sebesar 3,21 juta IDR menunjukkan bahwa nilai biaya akuisisi pelanggan yang paling sering muncul berada jauh di bawah nilai rata-rata. Hal ini mengindikasikan bahwa terdapat kelompok perusahaan yang mampu memperoleh pelanggan dengan biaya relatif rendah, meskipun secara keseluruhan rata-rata biaya akuisisi tergolong cukup tinggi. Perbedaan yang cukup besar antara nilai modus dan nilai mean mencerminkan adanya variasi biaya akuisisi pelanggan antar perusahaan dalam dataset.
+
+Secara keseluruhan, ukuran pemusatan menunjukkan bahwa pusat distribusi data berada di kisaran 33 juta IDR, tetapi tetap terdapat dominasi nilai biaya rendah yang sering muncul, sehingga struktur data bersifat heterogen.
+
+Ukuran Sebaran (Standar Deviasi, Range, Kuartil)
+
+**Ringkasan Ukuran Sebaran:**
+
+Hasil analisis ukuran sebaran pada variabel Biaya_Akuisisi_Pelanggan_Juta_IDR menunjukkan bahwa nilai minimum sebesar 2,56 juta IDR dan nilai maksimum sebesar 68,77 juta IDR. Dengan demikian, range (rentang) data adalah 66,21 juta IDR, yang menunjukkan perbedaan biaya akuisisi pelanggan yang sangat besar antar perusahaan. Nilai standar deviasi sebesar 20,03 juta IDR menandakan tingkat penyebaran data yang cukup tinggi dari nilai rata-rata.
+
+Berdasarkan ringkasan lima angka (five-number summary), diperoleh nilai Kuartil 1 (Q1) sebesar 15,23 juta IDR, median sebesar 33,08 juta IDR, dan Kuartil 3 (Q3) sebesar 50,92 juta IDR.
+
+**Interpretasi:**
+
+Nilai standar deviasi sebesar 20,03 juta IDR menunjukkan bahwa biaya akuisisi pelanggan menyebar cukup jauh dari nilai rata-rata sebesar 33,50 juta IDR. Hal ini mengindikasikan bahwa biaya yang dikeluarkan perusahaan untuk memperoleh pelanggan tidak terkonsentrasi pada satu nilai tertentu, melainkan sangat bervariasi.
+
+Nilai range yang sangat lebar, yaitu dari 2,56 hingga 68,77 juta IDR, menunjukkan adanya perbedaan yang signifikan antara perusahaan dengan biaya akuisisi pelanggan rendah dan perusahaan dengan biaya akuisisi pelanggan tinggi. Perusahaan dengan biaya terendah kemungkinan memiliki strategi pemasaran yang lebih efisien, sedangkan perusahaan dengan biaya tertinggi mungkin menghadapi persaingan pasar yang lebih ketat atau menggunakan strategi promosi yang lebih mahal.
+
+Berdasarkan kuartil, sebanyak 25% data berada di bawah 15,23 juta IDR, yang menunjukkan kelompok perusahaan dengan biaya akuisisi pelanggan relatif rendah. Sementara itu, 25% data lainnya berada di atas 50,92 juta IDR, yang menandakan adanya kelompok perusahaan dengan biaya akuisisi pelanggan yang tinggi. Median sebesar 33,08 juta IDR menunjukkan bahwa setengah dari perusahaan memiliki biaya akuisisi di bawah nilai tersebut dan setengah lainnya berada di atasnya.
+
+**Visualisasi Data (Histogram)**
+![alt text](results/histogram.png)
+Interpretasi Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR
+
+Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR menunjukkan bahwa data biaya akuisisi pelanggan tersebar dalam rentang yang cukup luas, yaitu dari sekitar 2,56 juta IDR hingga 68,77 juta IDR. Sebaran batang histogram terlihat relatif merata di sepanjang rentang nilai, namun tetap menunjukkan variasi frekuensi pada beberapa interval tertentu.
+
+Garis merah putus-putus pada histogram menandai nilai mean sebesar 33,5 juta IDR, yang berada di sekitar bagian tengah distribusi. Posisi mean yang berada di pusat sebaran menunjukkan bahwa secara umum biaya akuisisi pelanggan rata-rata berada pada kisaran menengah, tidak terlalu rendah maupun terlalu tinggi.
+
+Pada bagian kiri histogram (nilai rendah), terlihat adanya sejumlah frekuensi pada biaya akuisisi yang relatif kecil. Hal ini sejalan dengan nilai modus sebesar 3,21 juta IDR, yang menunjukkan bahwa biaya akuisisi pelanggan yang paling sering muncul berada pada tingkat yang rendah. Kondisi ini mengindikasikan bahwa terdapat kelompok perusahaan yang mampu memperoleh pelanggan dengan biaya yang relatif efisien.
+
+Sementara itu, pada bagian kanan histogram juga terlihat sebaran data hingga nilai yang cukup tinggi. Keberadaan nilai-nilai tinggi ini menunjukkan adanya perusahaan dengan biaya akuisisi pelanggan yang besar, yang kemungkinan disebabkan oleh strategi pemasaran yang agresif, biaya promosi yang tinggi, atau tingkat persaingan pasar yang ketat. Nilai-nilai tinggi tersebut turut berkontribusi terhadap besarnya standar deviasi dan range data.
+
+Secara keseluruhan, pola histogram menunjukkan bahwa distribusi Biaya_Akuisisi_Pelanggan_Juta_IDR memiliki tingkat variasi yang tinggi dan tidak sepenuhnya terpusat pada satu rentang nilai tertentu. Meskipun nilai mean dan median hampir sama, keberadaan nilai rendah yang sering muncul serta nilai tinggi yang cukup ekstrem menunjukkan bahwa struktur data bersifat heterogen. Oleh karena itu, untuk memahami karakteristik biaya akuisisi pelanggan secara lebih komprehensif, analisis tidak cukup hanya mengandalkan nilai rata-rata, tetapi juga perlu mempertimbangkan ukuran sebaran dan visualisasi data.
+Kesimpulan
+
+Berdasarkan analisis statistik deskriptif, variabel Biaya_Akuisisi_Pelanggan_Juta_IDR memiliki tingkat variasi yang tinggi. Hal ini ditunjukkan oleh standar deviasi yang besar, range yang sangat lebar, serta perbedaan yang jelas antar kelompok perusahaan berdasarkan kuartil. Meskipun nilai mean dan median yang hampir sama menunjukkan bahwa pusat distribusi data relatif seimbang, nilai modus yang jauh lebih rendah mengindikasikan adanya kelompok perusahaan dengan biaya akuisisi pelanggan yang rendah dan sering muncul dalam data.
+
+Secara keseluruhan, data biaya akuisisi pelanggan tidak terpusat pada satu nilai tertentu, melainkan tersebar luas dari biaya yang sangat rendah hingga sangat tinggi. Kondisi ini menunjukkan adanya perbedaan strategi dan efisiensi akuisisi pelanggan antar perusahaan dalam dataset yang dianalisis.
 
 ### 5.2. Uji Normalitas
 - **Hasil Uji Shapiro-Wilk:**
