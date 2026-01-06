@@ -77,7 +77,7 @@ Nilai range yang sangat lebar, yaitu dari 2,56 hingga 68,77 juta IDR, menunjukka
 Berdasarkan kuartil, sebanyak 25% data berada di bawah 15,23 juta IDR, yang menunjukkan kelompok perusahaan dengan biaya akuisisi pelanggan relatif rendah. Sementara itu, 25% data lainnya berada di atas 50,92 juta IDR, yang menandakan adanya kelompok perusahaan dengan biaya akuisisi pelanggan yang tinggi. Median sebesar 33,08 juta IDR menunjukkan bahwa setengah dari perusahaan memiliki biaya akuisisi di bawah nilai tersebut dan setengah lainnya berada di atasnya.
 
 **Visualisasi Data (Histogram)**
-![alt text](results/histogram.png)
+![alt text](results/histogram_.png)
 Interpretasi Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR
 
 Histogram Biaya_Akuisisi_Pelanggan_Juta_IDR menunjukkan bahwa data biaya akuisisi pelanggan tersebar dalam rentang yang cukup luas, yaitu dari sekitar 2,56 juta IDR hingga 68,77 juta IDR. Sebaran batang histogram terlihat relatif merata di sepanjang rentang nilai, namun tetap menunjukkan variasi frekuensi pada beberapa interval tertentu.
